@@ -7,5 +7,6 @@ fn main() {
     // data_types::number_types();
     // data_types::bool_and_char();
     // data_types::arrays_and_tuples();
-    data_types::strings_and_string_slices();
+    // data_types::strings_and_string_slices();
+    data_types::string_concatenation();
 }

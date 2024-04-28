@@ -109,4 +109,22 @@ pub mod data_types {
         println!("Name: {}, Name: {}, Name: {}",
                  person_name_string, person_name_slice_2, person_name_slice_3);
     }
+
+    pub fn string_concatenation() {
+        let duck = "Duck";
+        let airlines = "Airlines";
+
+        // approach 1
+        // let airline_name = [duck, " ", airlines].concat();
+
+        // approach 2
+        let airline_name = format!("{} {}", duck, airlines);
+        println!("{}", airline_name);
+
+        let mut slogan = String::new();
+        slogan.push_str("We hit the ground");
+        slogan.push(' ');
+        slogan = slogan + "every time";
+        println!("{}", slogan);
+    }
 }
