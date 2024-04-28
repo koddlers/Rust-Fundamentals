@@ -1,4 +1,6 @@
 pub mod data_types {
+    use std::mem::size_of_val;
+
     pub fn number_types() {
         println!("Rust number types example\n");
 
@@ -61,5 +63,15 @@ pub mod data_types {
         const UNSIGNED_128_BIT_MAX: u128 = 340282366920938463463374607431768211455;
         println!("128-bit un-signed integer min: {}", UNSIGNED_128_BIT_MIN);
         println!("128-bit un-signed integer max: {}\n", UNSIGNED_128_BIT_MAX);
+    }
+
+    pub fn bool_and_char() {
+        let truth: bool = true;
+        let untrue: bool = false;
+        println!("`{}` and `{}` are booleans", truth, untrue);
+
+        let character = 'a';
+        println!("`{}` is a character type and it is {} Bytes in size",
+                 character, size_of_val(&character));
     }
 }
