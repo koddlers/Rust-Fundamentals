@@ -94,4 +94,19 @@ pub mod data_types {
         println!("Location name: {}, latitude: {}, longitude: {}",
                  name, latitude, longitude);
     }
+
+    pub fn strings_and_string_slices() {
+        let person_name_slice = "Donald Mallard";
+        let person_name_string_1 = person_name_slice.to_string();
+        let person_name_string_2 = "Donald Mallard".to_string();
+        let person_name_string_3 = String::from("Donald Mallard");
+        println!("Name: {}, Name: {}, Name: {}, Name: {}",
+                 person_name_slice, person_name_string_1, person_name_string_2, person_name_string_3);
+
+        let person_name_string = String::from("Donald Mallard");
+        let person_name_slice_2 = &person_name_string;
+        let person_name_slice_3 = person_name_string.as_str();
+        println!("Name: {}, Name: {}, Name: {}",
+                 person_name_string, person_name_slice_2, person_name_slice_3);
+    }
 }
