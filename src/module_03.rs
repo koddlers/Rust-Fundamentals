@@ -74,4 +74,24 @@ pub mod data_types {
         println!("`{}` is a character type and it is {} Bytes in size",
                  character, size_of_val(&character));
     }
+
+    pub fn arrays_and_tuples() {
+        // array
+        let mut large_array = [0.0; 100_000];
+        large_array[1] = 1.0;
+        large_array[2] = 2.0;
+        large_array[3] = 3.0;
+        println!("Array elements: {}, {} and {}",
+                 large_array[1], large_array[2], large_array[3]);
+
+        // tuple
+        let location = ("KCLE", 0.0, 0.0);
+        println!("Location name: {}, latitude: {}, longitude: {}",
+                 location.0, location.1, location.2);
+
+        // de-structuring the tuple
+        let (name, latitude, longitude) = location;
+        println!("Location name: {}, latitude: {}, longitude: {}",
+                 name, latitude, longitude);
+    }
 }
