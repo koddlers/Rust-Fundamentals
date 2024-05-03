@@ -35,4 +35,16 @@ pub mod control_flow {
         println!("VOR:\t{}", NavigationAids::VOR as u8);
         println!("VORDME:\t{}", NavigationAids::VORDME as u8);
     }
+
+    pub fn options() {
+        let phrase = String::from("Duck Airlines");
+        // let letter = phrase.chars().nth(5);
+        let letter = phrase.chars().nth(15);
+
+        let value = match letter {
+            Some(character) => character.to_string(),
+            None => String::from("No Value")
+        };
+        println!("{}", value);
+    }
 }
