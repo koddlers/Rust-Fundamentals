@@ -28,5 +28,6 @@ fn main() {
     // operators::bitwise_operators();
     // operators::project_part_one();
     // control_flow::if_else();
-    control_flow::if_else_logical_ops();
+    // control_flow::if_else_logical_ops();
+    control_flow::enums();
 }
