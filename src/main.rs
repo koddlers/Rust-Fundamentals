@@ -1,10 +1,12 @@
-mod module_03;
-mod module_04;
-mod module_05;
+// mod module_03;
+// mod module_04;
+// mod module_05;
+mod module_06;
 
 // pub use module_03::data_types;
 // pub use module_04::variables;
-pub use module_05::operators;
+// pub use module_05::operators;
+pub use module_06::control_flow;
 
 fn main() {
     // Module 03 - Data Types -> 02 - Number Types
@@ -24,5 +26,7 @@ fn main() {
     // operators::math_operators();
     // operators::logic_operators();
     // operators::bitwise_operators();
-    operators::project_part_one();
+    // operators::project_part_one();
+    // control_flow::if_else();
+    control_flow::if_else_logical_ops();
 }
