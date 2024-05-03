@@ -30,5 +30,6 @@ fn main() {
     // control_flow::if_else();
     // control_flow::if_else_logical_ops();
     // control_flow::enums();
-    control_flow::options();
+    // control_flow::options();
+    control_flow::match_statement();
 }
