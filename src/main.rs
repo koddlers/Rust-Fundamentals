@@ -1,11 +1,13 @@
-// mod module_03;
-// mod module_04;
-// mod module_05;
+#![allow(unused)]
+
+mod module_03;
+mod module_04;
+mod module_05;
 mod module_06;
 
-// pub use module_03::data_types;
-// pub use module_04::variables;
-// pub use module_05::operators;
+pub use module_03::data_types;
+pub use module_04::variables;
+pub use module_05::operators;
 pub use module_06::control_flow;
 
 fn main() {
@@ -31,5 +33,6 @@ fn main() {
     // control_flow::if_else_logical_ops();
     // control_flow::enums();
     // control_flow::options();
-    control_flow::match_statement();
+    // control_flow::match_statement();
+    control_flow::match_with_enums();
 }
