@@ -123,4 +123,25 @@ pub mod control_flow {
             println!("Quack");
         }
     }
+
+    pub fn rust_loops() {
+        // Infinite loop
+        // loop {
+        //     println!("Hello");
+        // }
+
+        let mut counter = 0;
+        loop {
+            counter += 1;
+            // skip printing 5
+            if counter == 5 {
+                continue;
+            }
+
+            println!("{}", counter);
+            if counter == 10 {
+                break;
+            }
+        }
+    }
 }

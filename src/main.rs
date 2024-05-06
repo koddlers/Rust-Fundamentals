@@ -1,4 +1,5 @@
 #![allow(unused)]
+#![allow(irrefutable_let_patterns)]     // to allow `control_flow::if_let()`
 
 mod module_03;
 mod module_04;
@@ -35,5 +36,6 @@ fn main() {
     // control_flow::options();
     // control_flow::match_statement();
     // control_flow::match_with_enums();
-    control_flow::if_let();
+    // control_flow::if_let();
+    control_flow::rust_loops();
 }
