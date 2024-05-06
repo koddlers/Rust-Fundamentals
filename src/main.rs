@@ -38,5 +38,6 @@ fn main() {
     // control_flow::match_with_enums();
     // control_flow::if_let();
     // control_flow::rust_loops();
-    control_flow::while_loops();
+    // control_flow::while_loops();
+    control_flow::for_loops();
 }
