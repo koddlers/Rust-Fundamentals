@@ -5,11 +5,13 @@ mod module_03;
 mod module_04;
 mod module_05;
 mod module_06;
+mod exercise_project;
 
 pub use module_03::data_types;
 pub use module_04::variables;
 pub use module_05::operators;
 pub use module_06::control_flow;
+pub use exercise_project::project;
 
 fn main() {
     // Module 03 - Data Types -> 02 - Number Types
@@ -29,7 +31,6 @@ fn main() {
     // operators::math_operators();
     // operators::logic_operators();
     // operators::bitwise_operators();
-    // operators::project_part_one();
     // control_flow::if_else();
     // control_flow::if_else_logical_ops();
     // control_flow::enums();
@@ -39,5 +40,8 @@ fn main() {
     // control_flow::if_let();
     // control_flow::rust_loops();
     // control_flow::while_loops();
-    control_flow::for_loops();
+    // control_flow::for_loops();
+
+    // Exercise Project
+    project::project_part_one();
 }
