@@ -43,5 +43,6 @@ fn main() {
     // control_flow::for_loops();
 
     // Exercise Project
-    project::project_part_one();
+    // project::project_part_one();
+    project::project_part_two();
 }
