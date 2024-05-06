@@ -34,5 +34,6 @@ fn main() {
     // control_flow::enums();
     // control_flow::options();
     // control_flow::match_statement();
-    control_flow::match_with_enums();
+    // control_flow::match_with_enums();
+    control_flow::if_let();
 }

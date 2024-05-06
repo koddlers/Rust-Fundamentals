@@ -113,4 +113,14 @@ pub mod control_flow {
             }
         }
     }
+
+    // Issues `warning: irrefutable `if let` pattern`
+    // TODO: research more ob this
+    pub fn if_let() {
+        let animal = "Duck";
+
+        if let animal = "Duck" {
+            println!("Quack");
+        }
+    }
 }
