@@ -144,4 +144,13 @@ pub mod control_flow {
             }
         }
     }
+
+    pub fn while_loops() {
+        let mut counter = 1;
+
+        while counter <= 10 {
+            println!("{}", counter);
+            counter += 1;
+        }
+    }
 }
