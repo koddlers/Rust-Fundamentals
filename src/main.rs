@@ -5,12 +5,14 @@ mod module_03;
 mod module_04;
 mod module_05;
 mod module_06;
+mod module_07;
 mod exercise_project;
 
 pub use module_03::data_types;
 pub use module_04::variables;
 pub use module_05::operators;
 pub use module_06::control_flow;
+pub use module_07::ownership_and_borrowing;
 pub use exercise_project::project;
 
 fn main() {
@@ -42,7 +44,12 @@ fn main() {
     // control_flow::while_loops();
     // control_flow::for_loops();
 
+    // Module 07 - Ownership and Borrowing
+    // ownership_and_borrowing::ownership();
+    // ownership_and_borrowing::borrowing();
+    ownership_and_borrowing::borrowing_with_scope();
+
     // Exercise Project
     // project::project_part_one();
-    project::project_part_two();
+    // project::project_part_two();
 }
