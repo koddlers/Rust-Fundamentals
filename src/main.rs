@@ -47,7 +47,10 @@ fn main() {
     // Module 07 - Ownership and Borrowing
     // ownership_and_borrowing::ownership();
     // ownership_and_borrowing::borrowing();
-    ownership_and_borrowing::borrowing_with_scope();
+    // ownership_and_borrowing::borrowing_with_scope();
+    // ownership_and_borrowing::lifetimes();
+    // ownership_and_borrowing::bad_ref();
+    ownership_and_borrowing::explicit_lifetime_demo();
 
     // Exercise Project
     // project::project_part_one();

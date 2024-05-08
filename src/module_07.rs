@@ -49,4 +49,41 @@ pub mod ownership_and_borrowing {
 
         println!("Outer original value: \t\"{}\"", original);
     }
+
+    pub fn lifetimes() {
+        let outer_scope;
+        {
+            let inner_scope = 5;
+            outer_scope = &inner_scope;
+        }
+        // will produce error
+        // println!("{}", outer_scope);
+    }
+
+    // will produce error
+    // fn return_bad_ref<'a>() -> &'a i32 {
+    //     let value = 5;
+    //     &value
+    // }
+    //
+    // pub fn bad_ref() {
+    //     let reff = return_bad_ref();
+    //     println!("{}", reff);
+    // }
+
+    fn explicit_lifetime<'a>(p1: &'a i32, p2: &'a i32) -> &'a i32 {
+        if p1 > p2 {
+            p1
+        } else {
+            p2
+        }
+    }
+
+    pub fn explicit_lifetime_demo() {
+        let one = 24;
+        let two = 67;
+        let value = explicit_lifetime(&one, &two);
+
+        println!("{}", value);
+    }
 }
