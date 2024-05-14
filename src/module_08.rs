@@ -32,4 +32,27 @@ pub mod functions_and_error_handling {
         *next = String::from("next value");
         println!("fn change_original: \t\"{}\"", next)
     }
+
+    pub fn closures() {
+        let name = "Duck Airlines";
+
+        let write_message = |slogan: String| {
+            // print `name` and `slogan`
+            // println!("{}. {}.", name, slogan);
+
+            // return `name` and `slogan`
+            // notice there is no trailing `;` in the return value
+            String::from(format!("{}. {}.", name, slogan))
+        };
+
+        let slogan = String::from("We hit the ground everytime");
+        let phrase = write_message(slogan);
+        println!("{}", phrase);
+    }
+
+    // fn write_message() {
+    //     let name = "Duck Airlines";
+    //     let slogan = "We hit the ground everytime";
+    //     println!("Welcome to {}. {}.", name, slogan);
+    // }
 }

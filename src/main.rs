@@ -7,6 +7,7 @@ mod module_05;
 mod module_06;
 mod module_07;
 mod exercise_project;
+mod module_08;
 
 pub use module_03::data_types;
 pub use module_04::variables;
@@ -14,6 +15,8 @@ pub use module_05::operators;
 pub use module_06::control_flow;
 pub use module_07::ownership_and_borrowing;
 pub use exercise_project::project;
+pub use module_08::functions_and_error_handling;
+// use crate::functions_and_error_handling::functions;
 
 fn main() {
     // Module 03 - Data Types -> 02 - Number Types
@@ -50,9 +53,14 @@ fn main() {
     // ownership_and_borrowing::borrowing_with_scope();
     // ownership_and_borrowing::lifetimes();
     // ownership_and_borrowing::bad_ref();
-    ownership_and_borrowing::explicit_lifetime_demo();
+    // ownership_and_borrowing::explicit_lifetime_demo();
 
     // Exercise Project
     // project::project_part_one();
     // project::project_part_two();
+
+    // Module 08 - Functions and Error Handling
+    // functions_and_error_handling::functions();
+    // functions_and_error_handling::ownership_and_borrowing_with_functions();
+    functions_and_error_handling::closures();
 }
