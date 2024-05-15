@@ -16,6 +16,7 @@ pub use module_06::control_flow;
 pub use module_07::ownership_and_borrowing;
 pub use exercise_project::project;
 pub use module_08::functions_and_error_handling;
+pub use module_08::functions_and_error_handling_more;
 // use crate::functions_and_error_handling::functions;
 
 fn main() {
@@ -64,5 +65,6 @@ fn main() {
     // functions_and_error_handling::ownership_and_borrowing_with_functions();
     // functions_and_error_handling::closures();
     // functions_and_error_handling::error_handling();
-    functions_and_error_handling::result_enum();
+    // functions_and_error_handling::result_enum();
+    functions_and_error_handling_more::error_propagation();
 }
