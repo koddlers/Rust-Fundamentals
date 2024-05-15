@@ -1,4 +1,7 @@
 pub mod functions_and_error_handling {
+    use std::fs::File;
+    use std::io::ErrorKind;
+
     pub fn functions() {
         let greater = return_greater(10, 5);
         println!("greater: {}", greater);
@@ -65,4 +68,35 @@ pub mod functions_and_error_handling {
     //     let vector = vec![1, 2, 3, 4, 5];
     //     println!("{}", vector[10]);
     // }
+
+    pub fn result_enum() {
+        // Rust way of error handling
+        let filename = "C:\\Temp\\handbrake-user-presets.jsonp";
+
+        // `match` is equivalent to `try`
+        // the `Ok()` block is executed if the `try` succeeds
+        // the `Err()` block is equivalent to `catch` blocks
+        match File::open(filename) {
+            Ok(file) => {
+                println!("{:#?}", file);
+            }
+            Err(error) => {
+                match error.kind() {
+                    ErrorKind::NotFound => {
+                        match File::create(filename) {
+                            Ok(file) => {
+                                println!("File created");
+                            }
+                            Err(error) => {
+                                println!("{:#?}", error);
+                            }
+                        }
+                    }
+                    _ => {
+                        println!("{:#?}", error);
+                    }
+                }
+            }
+        }
+    }
 }
