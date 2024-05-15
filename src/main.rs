@@ -62,5 +62,6 @@ fn main() {
     // Module 08 - Functions and Error Handling
     // functions_and_error_handling::functions();
     // functions_and_error_handling::ownership_and_borrowing_with_functions();
-    functions_and_error_handling::closures();
+    // functions_and_error_handling::closures();
+    functions_and_error_handling::error_handling();
 }

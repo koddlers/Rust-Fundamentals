@@ -55,4 +55,14 @@ pub mod functions_and_error_handling {
     //     let slogan = "We hit the ground everytime";
     //     println!("Welcome to {}. {}.", name, slogan);
     // }
+
+    pub fn error_handling() {
+        panic!("The following function call will panic");
+        // panic_vector();
+    }
+
+    // fn panic_vector() {
+    //     let vector = vec![1, 2, 3, 4, 5];
+    //     println!("{}", vector[10]);
+    // }
 }
