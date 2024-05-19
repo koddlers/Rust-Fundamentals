@@ -71,5 +71,6 @@ fn main() {
     // functions_and_error_handling_more::error_propagation();
 
     // Module 09 - Data Structures and Traits
-    data_structures_and_traits::data_structures();
+    // data_structures_and_traits::data_structures();
+    data_structures_and_traits::associated_methods();
 }
