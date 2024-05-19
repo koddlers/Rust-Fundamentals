@@ -8,6 +8,7 @@ mod module_06;
 mod module_07;
 mod exercise_project;
 mod module_08;
+mod module_09;
 
 pub use module_03::data_types;
 pub use module_04::variables;
@@ -17,6 +18,7 @@ pub use module_07::ownership_and_borrowing;
 pub use exercise_project::project;
 pub use module_08::functions_and_error_handling;
 pub use module_08::functions_and_error_handling_more;
+pub use module_09::data_structures_and_traits;
 // use crate::functions_and_error_handling::functions;
 
 fn main() {
@@ -66,5 +68,8 @@ fn main() {
     // functions_and_error_handling::closures();
     // functions_and_error_handling::error_handling();
     // functions_and_error_handling::result_enum();
-    functions_and_error_handling_more::error_propagation();
+    // functions_and_error_handling_more::error_propagation();
+
+    // Module 09 - Data Structures and Traits
+    data_structures_and_traits::data_structures();
 }
