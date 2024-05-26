@@ -6,7 +6,6 @@ With its low overhead and high performance cross-platform development, Rust is a
 systems programming, embedded development and web programming. This course will teach you everything
 you need to know to become a Rust developer.
 
-
 ## Course Content
 
 ```shell
@@ -100,3 +99,5 @@ you need to know to become a Rust developer.
 ├── 14 - Summary
   └── 01 - Summary
 ```
+
+* **Link -**  <https://www.pluralsight.com/courses/fundamentals-rust>
