@@ -44,7 +44,7 @@ pub mod collections {
             }
         }
 
-        // `if let` is beter than `match` if we are going to do something only if any value exists
+        // `if let` is better than `match` if we are going to do something only if any value exists
         if let Some(flight_value) = flights.get(4) {
             println!("The fifth entry in the vector is: {}\n", flight_value);
         }
@@ -72,6 +72,40 @@ pub mod collections {
         flights.remove(1);
         for flight in flights.iter() {
             println!("{}", flight);
+        }
+    }
+
+    use std::collections::VecDeque;
+
+    pub fn vector_double_ended_queue() {
+        let mut flights: VecDeque<&str> = VecDeque::new();
+
+        flights.push_front("DA918\tto Orlando departs at 11:12");
+        flights.push_back("DA428\tto Salt Lake City departs at 12:05");
+        flights.push_front("DA98\tto London departs at 09:43");
+        flights.push_front("DA113\tto Boston departs at 06:20");
+        flights.push_back("DA41\tto Berlin departs at 15:30");
+        flights.push_back("DA2815\tto Nashville departs at 17:11");
+
+        let length = flights.len();
+        println!("There are {} flights scheduled.\n", length);
+
+        for flight in flights.iter() {
+            println!("{}", flight);
+        }
+
+        println!("\nChecking if an element exists with the `contains()` method");
+        let exists = flights.contains(&"DA98\tto London departs at 09:43");
+        println!("Element exists: {}", exists);
+
+        println!("\nCanceling all flights");
+        flights.clear();
+
+        let length = flights.len();
+        if (length > 0) {
+            println!("There are {} flights scheduled.", length);
+        } else {
+            println!("All the flights have been cancelled.");
         }
     }
 }

@@ -76,5 +76,6 @@ fn main() {
     // data_structures_and_traits::data_structures();
     // data_structures_and_traits::associated_methods();
     // data_structures_and_traits::traits();
-    collections::vectors();
+    // collections::vectors();
+    collections::vector_double_ended_queue();
 }
