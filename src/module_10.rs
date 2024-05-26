@@ -138,4 +138,22 @@ pub mod collections {
             println!("{:?}", flight);
         }
     }
+
+    use std::collections::HashSet;
+
+    pub fn sets() {
+        let mut flights = HashSet::new();
+
+        flights.insert(("DA918", "11:12", "Orlando"));
+        flights.insert(("DA428", "12:05", "Salt Lake City"));
+        flights.insert(("DA98", "09:43", "London"));
+        flights.insert(("DA113", "06:20", "Boston"));
+        flights.insert(("DA918", "11:12", "Orlando"));      // Duplicate value
+
+        // HashSets don't maintain insertion order
+        // the values are printed in different order for each iteration
+        for flight in flights.iter() {
+            println!("{:?}", flight);
+        }
+    }
 }

@@ -78,5 +78,6 @@ fn main() {
     // data_structures_and_traits::traits();
     // collections::vectors();
     // collections::vector_double_ended_queue();
-    collections::maps();
+    // collections::maps();
+    collections::sets();
 }
