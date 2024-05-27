@@ -11,6 +11,7 @@ mod module_08;
 mod module_09;
 mod module_10;
 mod module_11;
+mod module_12;
 
 pub use module_03::data_types;
 pub use module_04::variables;
@@ -24,6 +25,7 @@ pub use module_09::data_structures_and_traits;
 // use crate::functions_and_error_handling::functions;
 pub use module_10::collections;
 pub use module_11::generics;
+pub use module_12::concurrency;
 
 fn main() {
     // Module 03 - Data Types -> 02 - Number Types
@@ -87,5 +89,8 @@ fn main() {
 
     // Module 11 - Generics
     // generics::generic_types();
-    generics:: constraints();
+    // generics:: constraints();
+
+    // Module 12 - Concurrency
+    concurrency::creating_threads();
 }
