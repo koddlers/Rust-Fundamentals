@@ -12,6 +12,7 @@ mod module_09;
 mod module_10;
 mod module_11;
 mod module_12;
+mod module_13;
 
 pub use module_03::data_types;
 pub use module_04::variables;
@@ -26,6 +27,7 @@ pub use module_09::data_structures_and_traits;
 pub use module_10::collections;
 pub use module_11::generics;
 pub use module_12::concurrency;
+pub use module_13::crates_and_modules;
 
 fn main() {
     // Module 03 - Data Types -> 02 - Number Types
@@ -93,5 +95,8 @@ fn main() {
 
     // Module 12 - Concurrency
     // concurrency::creating_threads();
-    concurrency::thread_communications();
+    // concurrency::thread_communications();
+
+    // Module 13 - Crates and Modules
+    crates_and_modules::cargo_toml();
 }
