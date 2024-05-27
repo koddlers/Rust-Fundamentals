@@ -10,6 +10,7 @@ mod exercise_project;
 mod module_08;
 mod module_09;
 mod module_10;
+mod module_11;
 
 pub use module_03::data_types;
 pub use module_04::variables;
@@ -22,6 +23,7 @@ pub use module_08::functions_and_error_handling_more;
 pub use module_09::data_structures_and_traits;
 // use crate::functions_and_error_handling::functions;
 pub use module_10::collections;
+pub use module_11::generics;
 
 fn main() {
     // Module 03 - Data Types -> 02 - Number Types
@@ -76,8 +78,13 @@ fn main() {
     // data_structures_and_traits::data_structures();
     // data_structures_and_traits::associated_methods();
     // data_structures_and_traits::traits();
+
+    // Module 10 - Collections
     // collections::vectors();
     // collections::vector_double_ended_queue();
     // collections::maps();
-    collections::sets();
+    // collections::sets();
+
+    // Module 11 - Generics
+    generics::generic_types();
 }
