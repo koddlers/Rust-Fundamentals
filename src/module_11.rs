@@ -24,4 +24,20 @@ pub mod generics {
         println!("VOR information is: {:?}", vor);
         println!("NDB information is: {:?}", ndb);
     }
+
+    use std::ops::{Add, Sub};
+
+    // fn add<T: Add<Output=T>>(operand1: T, operand2: T) -> T {
+    //     operand1 + operand2
+    // }
+
+    fn add<T>(operand1: T, operand2: T) -> T
+        where T: Add<Output=T> + Sub<Output=T> {
+        operand1 + operand2
+    }
+
+    pub fn constraints() {
+        let sum = add(256, 262);
+        println!("{}", sum);
+    }
 }

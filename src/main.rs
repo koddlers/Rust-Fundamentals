@@ -86,5 +86,6 @@ fn main() {
     // collections::sets();
 
     // Module 11 - Generics
-    generics::generic_types();
+    // generics::generic_types();
+    generics:: constraints();
 }
