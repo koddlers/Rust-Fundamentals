@@ -92,5 +92,6 @@ fn main() {
     // generics:: constraints();
 
     // Module 12 - Concurrency
-    concurrency::creating_threads();
+    // concurrency::creating_threads();
+    concurrency::thread_communications();
 }
